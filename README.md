@@ -31,7 +31,13 @@ It allows users to enter a **prompt** (like `diwali`, `payment reminder`) and ge
 
 ## 📂 Repo Structure
 message-generator-feature/
-│── src/
-│ └── MessageGenerator.js
-│── README.md
 │── package.json
+│── README.md
+│── public/
+│   ├── index.html
+│   └── favicon.ico
+│
+└── src/
+    │── index.js
+    │── App.js
+    │── MessageGenerator.js
