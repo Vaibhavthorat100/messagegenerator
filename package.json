@@ -1,0 +1,12 @@
+{
+  "name": "message-generator-feature",
+  "version": "1.0.0",
+  "description": "A simple predefined message generator feature for Wotnot tool",
+  "main": "src/MessageGenerator.js",
+  "scripts": {
+    "start": "echo 'Add this component inside your React project to run.'"
+  },
+  "dependencies": {
+    "react": "^18.0.0"
+  }
+}
