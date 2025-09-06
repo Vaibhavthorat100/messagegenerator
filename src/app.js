@@ -3,8 +3,8 @@ import MessageGenerator from "./MessageGenerator";
 
 function App() {
   return (
-    <div>
-      <h1>Message Generator Demo</h1>
+    <div style={{ textAlign: "center", marginTop: "50px" }}>
+      <h1>Message Generator</h1>
       <MessageGenerator />
     </div>
   );
