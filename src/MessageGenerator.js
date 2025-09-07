@@ -1,27 +1,41 @@
 import React, { useState } from "react";
 
-const messages = [
-  "Hello {name}, Diwali greetings! We wish you the best holiday. Namaste!",
-  "Have a great day! 🌞",
-  "Stay positive ✨",
-  "Hello {name}, thank you for being with us!",
-  "Best wishes from our team 🙌"
-];
-
 function MessageGenerator() {
-  const [message, setMessage] = useState("");
+  const [prompt, setPrompt] = useState("");
+  const [messages, setMessages] = useState([]);
 
-  const generateMessage = () => {
-    const randomIndex = Math.floor(Math.random() * messages.length);
-    setMessage(messages[randomIndex]);
+  const handleGenerate = () => {
+    if (prompt.trim() === "") return;
+
+    const newMessages = [
+      `Hello {name}, ${prompt}! We wish you the best holiday.`,
+      `Hi {name}, ${prompt}! Stay happy and healthy.`,
+      `Greetings {name}, ${prompt}! Best wishes from our team.`,
+      `Dear {name}, ${prompt}! Enjoy your time with family and friends.`,
+    ];
+
+    setMessages(newMessages);
   };
 
   return (
-    <div>
-      <button onClick={generateMessage} style={{ padding: "10px 20px", fontSize: "16px" }}>
-        Generate Message
+    <div style={{ textAlign: "center", padding: "20px" }}>
+      <h1>Message Generator</h1>
+      <input
+        type="text"
+        placeholder="Enter your prompt"
+        value={prompt}
+        onChange={(e) => setPrompt(e.target.value)}
+        style={{ padding: "8px", marginRight: "10px" }}
+      />
+      <button onClick={handleGenerate} style={{ padding: "8px 16px" }}>
+        Generate
       </button>
-      <p style={{ marginTop: "20px", fontSize: "18px" }}>{message}</p>
+
+      <div style={{ marginTop: "20px" }}>
+        {messages.map((msg, index) => (
+          <p key={index}>{msg}</p>
+        ))}
+      </div>
     </div>
   );
 }
