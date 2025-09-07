@@ -1,43 +1,51 @@
-# Predefined Message Generator Feature
+# 📩 Message Generator Feature
 
-## 📌 Description
-This is a simple feature built for the **Wotnot WhatsApp CRM tool**.  
-It allows users to enter a **prompt** (like `diwali`, `payment reminder`) and generates a **predefined template message** that can be further tweaked before sending.
-
----
-
-## 🚀 How It Works
-1. User enters a short prompt (example: `diwali`).
-2. The system checks against predefined templates stored in code.
-3. A message is generated (example:  
-   `Hello {name}, Diwali greetings! We wish you the best holiday. Namaste!`)
-4. The message appears in a text box where the user can edit before sending.
+This project is a simple **predefined message generator** built as part of the internship assignment.  
+It allows users to enter a prompt (like "Diwali wishes") and generates a customizable message that can be later edited.  
+Deployed on **Vercel** for live access.
 
 ---
 
-## 🛠️ Example Prompts
-- **diwali** → `Hello {name}, Diwali greetings! We wish you the best holiday. Namaste!`
-- **payment reminder** → `Hello {name}, this is a gentle reminder about your pending payment of {amount}.`
-- **new year** → `Happy New Year {name}! Wishing you success and happiness ahead.`
+## 🚀 Live Demo
+👉 [View Deployment on Vercel](https://messagegenerator.vercel.app/)
 
 ---
 
-## ⚡ Usage
-- Copy the `MessageGenerator.js` component into your React project.
-- Import it and render `<MessageGenerator />` inside your app.
-- Enter a prompt (like `diwali`) and click **Generate** to get a message.
+## 🛠️ Repository
+👉 [GitHub Repository](https://github.com/Vaibhavthorat100/messagegenerator)
 
 ---
 
-## 📂 Repo Structure
-message-generator-feature/
-│── package.json
-│── README.md
-│── public/
-│   ├── index.html
-│   └── favicon.ico
-│
-└── src/
-    │── index.js
-    │── App.js
-    │── MessageGenerator.js
+## 🎥 Walkthrough Video
+👉 [Watch on Loom](https://www.loom.com/share/aba89ae628164f41ac59fdf6d32ea928?sid=c8a378a3-fd28-4b3f-90d6-3a669d2878d0)
+
+---
+
+## ⚡ Features
+- Enter a prompt (e.g., "Diwali wishes", "New Year greetings").  
+- Generates a predefined message with `{name}` placeholder.  
+- Users can copy or tweak the message further.  
+- Responsive design and quick deployment.  
+
+---
+
+## 🧑‍💻 Tech Stack
+- React.js  
+- JavaScript  
+- CSS  
+- Vercel (for deployment)  
+
+---
+
+## 📂 Project Structure
+messagegenerator/
+├── public/
+│ ├── index.html
+│ └── favicon.ico
+├── src/
+│ ├── App.js
+│ ├── MessageGenerator.js
+│ ├── index.css
+│ └── index.js
+├── package.json
+└── README.md
